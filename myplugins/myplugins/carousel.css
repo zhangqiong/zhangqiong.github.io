@@ -6,7 +6,6 @@
 			overflow: hidden;
 			/*border: 1px solid;*/
 		}
-<<<<<<< .mine
 .carousel *::selection{
     background-color: rgba(0,0,0,0);
 }
@@ -14,16 +13,13 @@
     background-color: rgba(0,0,0,0);
 }
 
-||||||| .r40
 
-=======
 .carousel *::selection{
     background-color: rgba(0,0,0,0);
 }
 .carousel *::-moz-selection{
      background-color: rgba(0,0,0,0);
  }
->>>>>>> .r61
 		.carousel-inner{
 			position: absolute;
 			top:0;
