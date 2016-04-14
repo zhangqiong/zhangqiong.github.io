@@ -1,0 +1,143 @@
+.banner{
+    width: 100%;
+}
+.trace{
+    width: 100%;
+    margin: 30px auto;
+    padding:0 10px;
+}
+.trace > a{
+    color: black;
+}
+.trace > a:last-child{
+    color: #29b078;
+}
+/*中间内容*/
+.article_wraper{
+    width: 100%;
+    margin: 30px auto;
+}
+.aside_main,
+.article_main{
+    border-radius: 5px;
+    background-color: white;
+}
+/*左侧内容*/
+.aside_main{
+    padding:0 30px;
+    float: left;
+}
+.aside_main h3{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-bottom: solid #e6e6e6 thin;
+}
+.aside_main li{
+    height: 50px;
+    cursor: pointer;
+    line-height: 50px;
+    list-style-type: none;
+}
+.aside_main li .icon{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+  background-image: url('../images/mysprite1.png');
+  background-position: left -16px;
+}
+.aside_main .chosen .icon{
+  background-image: url('../images/mysprite1.png');
+  background-position: left -26px;
+}
+.aside_main li{
+    width: 80px;
+    color: #29b078;
+}
+.aside_main .chosen{
+    color: #ff650e;
+}
+/*介绍主体*/
+.article_main{
+    float: left;
+}
+.article_main .section1{
+    border-bottom: solid #e6e6e6 thin;
+}
+.article_main .section1 .co_logo{
+    display: block;
+    float: left;
+    width: 122px;
+    height: 31px;
+
+  background-image: url('../images/mysprite1.png');
+  background-position: left -36px;
+}
+.article_main p{
+    margin: 50px;
+    text-indent: 2rem;
+}
+@media screen and (min-width: 1250px){
+    #banner{
+        background-image: url("../images/banner.jpg");
+        display: block;
+        width: 100%;
+        height: 12.5vw;
+        background-size: cover;
+    }
+    .trace{
+        width: 1230px;
+    }
+    .article_wraper{
+        width: 1230px;
+    }
+    .aside_main{
+        width: 25%;
+    }
+    .article_main{
+        width: 70%;
+        float: right;
+    }
+    .aside_main li{
+        margin-left: 33%;
+    }
+
+}
+@media screen and (max-width: 1250px){
+    #banner{
+        display: block;
+        background-image: url("../images/banner_low.jpg");
+        width: 100%;
+        height: 21vw;
+        background-size: cover;
+    }
+    .aside_main{
+        width: 100%;
+    }
+    .aside_main li{
+        float: left;
+        margin: 0 5px;
+    }
+}
+@media screen and (max-width: 500px){
+    #banner{
+        display: none;
+    }
+
+}
+@media screen and (max-width: 420px){
+    .article_main p{
+        clear: both;
+    }
+    .co_logo{
+        margin: 10px 50px;
+    }
+}
+@media screen and (min-width: 420px){
+    .co_logo{
+        margin: 50px;
+        margin-top: 0;
+    }
+}
+

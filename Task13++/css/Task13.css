@@ -1,0 +1,319 @@
+/*添加边框阴影效果*/
+.shadow{
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    -o-box-shadow:  0 0 5px rgba(0,0,0,0.3);
+    -webkit-box-shadow:  0 0 5px rgba(0,0,0,0.3);
+}
+/*添加一个三个字宽的空*/
+.thr-space{
+    display: inline-block;
+    width: 3em;
+    height: 1em;
+}
+/*文章主体的一些设置*/
+.article-main{
+    background-color: #fafafa;
+}
+.article-main h2{
+    text-align: center;
+}
+.article-main .row{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+/*第一行*/
+#efficient{
+  background-image: url('../img/mysprite.png');
+  background-position: left -0px;
+    display: block;
+    width: 43px;
+    height: 62px;
+}
+#standard{
+  background-image: url('../img/mysprite.png');
+  background-position: left -62px;
+    display: block;
+    width: 61px;
+    height: 48px;
+    margin-top: 14px;
+}
+#peo_hub{
+  background-image: url('../img/mysprite.png');
+  background-position: left -110px;
+    display: block;
+    width: 52px;
+    height: 55px;
+    margin-top: 7px;
+}
+.feature,
+.peo-count{
+    height: 260px;
+    padding-top: 1px;
+}
+.feature .icon{
+    margin: auto ;
+
+}
+.feature h3{
+    text-align: center;
+    margin: 30px auto;
+}
+.feature .text{
+    display: block;
+    max-width: 260px;
+    margin: auto;
+}
+.peo-count .icon{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    margin-top: 10px;
+    background-image: url('../img/mysprite.png');
+    background-position: left -165px;
+}
+.peo-count-content{
+    width: 190px;
+    margin: auto;
+}
+@media (max-width: 768px){
+    .peo-count{
+        height: auto;
+    }
+}
+@media (min-width: 768px) {
+    .peo-count{
+        padding-top: 50px;
+        border-left: dashed 1px #dedede;
+    }
+}
+/*第二行如何学习*/
+.how-learn .next{
+    display: block;
+    width: 26px;
+    height: 26px;
+    background-repeat: no-repeat;
+  background-image: url('../img/mysprite.png');
+  background-position: left -178px;
+    margin-top: 92px;
+}
+.how-learn .round{
+    display: block;
+    height: 70px;
+    width: 70px;
+    margin-right: 10px;
+    border-radius:50%;
+    background-color: #ffffff;
+    line-height: 70px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #29b078;
+}
+
+.step span{
+    float: left;
+}
+.step{
+    padding: 0;
+    margin-top: 70px;
+}
+.step .text{
+    margin-top: 15px;
+}
+.how-learn .next-wrapper{
+    width: 0;
+    overflow: visible;
+    float: left;
+}
+@media (min-width: 768px) {
+    #next2,
+    #next4,
+    #next6{
+        display: none;
+    }
+}
+@media (min-width: 992px) {
+    #next2,
+    #next6{
+        display: block;
+    }
+
+}
+.step-content{
+    width: 210px;
+    margin: auto;
+}
+@media (max-width: 768px){
+    .next-wrapper{
+        width: 100%!important;
+    }
+    .next{
+        margin: auto!important;
+        float: none;!important;
+        transform: rotateZ(90deg);
+        -o-transform: rotateZ(90deg);
+        -webkit-transform: rotateZ(90deg);
+        -ms-transform: rotateZ(90deg);
+        -moz-transform: rotateZ(90deg);
+
+    }
+    .step{
+        margin:40px auto;
+
+    }
+}
+@media (min-width: 768px){
+    .next-wrapper{
+        width: 0!important;
+        padding:0;
+    }
+}
+@media (min-width: 768px){
+    .next-wrapper{
+        position: relative;
+        left:-10px;
+    }
+}
+/*第三行优秀学员*/
+.stu{
+    height: 370px;
+    max-width: 270px;
+    margin: 50px auto 0;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.stu .photo{
+    display: block;
+    width: 108px;
+    height: 109px;
+    margin: auto;
+}
+.stu h3{
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 3em;
+}
+#man1{
+  background-image: url('../img/mysprite.png');
+  background-position: left -204px;
+
+}
+#wman1{
+  background-image: url('../img/mysprite.png');
+  background-position: left -313px;
+}
+#man2{
+  background-image: url('../img/mysprite.png');
+  background-position: left -422px;
+
+}
+#wman2{
+  background-image: url('../img/mysprite.png');
+  background-position: left -531px;
+}
+/*第四行合作*/
+.cooperation{
+    width: 100%;
+    font-size: 0;
+    margin-left: 0!important;
+}
+.cooperation .icon{
+    display: block;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin: auto;
+}
+.cooperation .icon-wrapper{
+    float: left;
+    max-width: 240px;
+    width: 20%!important;
+    height: 170px!important;
+    padding-top: 55px;
+    cursor: pointer;
+}
+@media (max-width: 992px){
+
+    .cooperation .icon-wrapper{
+        float: left;
+        max-width: 240px;
+        width: 33.3%!important;
+        height: 85px!important;
+        padding-top: 10px;
+    }
+}
+@media (max-width: 590px) {
+    .cooperation-content{
+        max-width: 480px!important;
+    }
+    .cooperation .icon-wrapper{
+        float: left;
+        width: 50%!important;
+        height: 85px!important;
+        padding-top: 20px;
+    }
+}
+@media (max-width: 400px) {
+    .cooperation-content{
+        max-width: 240px!important;
+    }
+    .cooperation .icon-wrapper{
+        float: none!important;
+        width: 100%!important;
+        height: 85px!important;
+        padding-top: 20px;
+    }
+}
+.cooperation-content{
+    margin: 30px auto 0;
+    width: 100%;
+    background-color: #ffffff;
+}
+.cooperation .icon-wrapper:hover{
+    z-index: 10;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    -o-box-shadow:  0 0 5px rgba(0,0,0,0.3);
+    -webkit-box-shadow:  0 0 5px rgba(0,0,0,0.3);
+}
+#c1{
+    width: 134px;
+    height: 47px;
+    margin-top: 10px;;
+  background-image: url('../img/mysprite.png');
+  background-position: left -639px;
+}
+#c2{
+    width: 54px;
+    height: 58px;
+    margin-top: 0;
+  background-image: url('../img/mysprite.png');
+  background-position: left -687px;
+}
+#c3{
+    width: 124px;
+    height: 56px;
+    margin-top: 0;
+  background-image: url('../img/mysprite.png');
+  background-position: left -745px;
+}
+#c4{
+    width: 169px;
+    height: 39px;
+    margin-top: 15px;
+  background-image: url('../img/mysprite.png');
+  background-position: left -801px;
+}
+#c5{
+    width: 54px;
+    height: 58px;
+    margin-top: 0;
+  background-image: url('../img/mysprite.png');
+  background-position: left -687px;
+}
+
+
+

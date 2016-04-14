@@ -1,0 +1,99 @@
+/*宽条广告*/
+.banner{
+    width: 100%;
+}
+@media (max-width: 768px){
+    .banner{
+        display: none;
+    }
+}
+/*主体容器*/
+.article-wrapper{
+    margin: 80px auto;
+}
+.aside-main-content,
+.article-main{
+    background-color: #fff;
+    border-radius: 5px;
+}
+/*侧面选项*/
+.aside-main{
+    padding-right: 25px;
+}
+.aside-main-content{
+    padding-top: 1px;
+}
+.aside-main-content h3{
+    text-align: center;
+}
+.aside-main-content li{
+    list-style-type: none;
+    margin-left: 30%;
+    line-height: 50px;
+    cursor: pointer;
+}
+.aside-main-content ul{
+    border-top: #e6e6e6 solid 1px;
+    color: #53bb8c;
+    padding-left: 0!important;
+}
+.aside-main-content li .icon{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 0.7em;
+    border-radius: 50%;
+    border: 1px solid #ff640c;
+}
+.aside-main .chosen{
+    color: #ff650e;
+}
+.aside-main .chosen .icon{
+    background-color: #f9a372;
+}
+/*文章*/
+.article-main .co-logo{
+    display: block;
+    float: left;
+    margin: 2% 20px 20px 0;
+  background-image: url('../img/mysprite.png');
+  background-position: left -1116px;
+    width: 122px;
+    height: 31px;
+}
+.article-main .section1{
+    /*height: 155px;*/
+    padding: 20px 70px;
+    border-bottom: solid #e6e6e6 1px;
+}
+.article-main .section2{
+    padding: 30px 70px 20px;
+}
+@media (max-width: 768px){
+    .aside-main{
+        background-color: #ffffff;
+    }
+    .article-wrapper{
+        margin: 20px auto;
+    }
+    .aside-main-content li{
+        float: left;
+        width: 80px;
+        margin-left: 20px;
+    }
+    /*.article-main .section1{*/
+        /*height: auto;*/
+    /*}*/
+}
+@media (max-width: 450px){
+    .co-logo{
+        float: none!important;
+    }
+    .section1,
+    .section2{
+        padding-left: 0!important;
+        padding-right: 0!important;
+    }
+
+}
+

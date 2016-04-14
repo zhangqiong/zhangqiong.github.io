@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div{
+			height:500px;
+		}
+	</style>
+	<script src="js/jquery-1.12.0.js"></script>
+</head>
+<body>
+
+<iframe id="iframe" width="700" height="500" src=""></iframe>
+<script>
+	a={
+		hint:{},
+		func:function(){
+			this.hint={a:'a'}
+			// console.log(hint);
+		}
+
+	};
+	a.func();
+	console.log(a.hint);
+</script>
+
+</body>
+</html>

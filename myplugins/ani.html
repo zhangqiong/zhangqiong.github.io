@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CSS动画</title>
+	<meta name="viewport" content="width=device-width,user-scalable=1.0">
+	<!-- <link rel="stylesheet" type="text/css" href="css/animate.css"> -->
+	<!-- // <script src="js/jquery-1.12.0.js"></script> -->
+	<link rel="stylesheet" href="myplugins/ani.css">
+	<style type="text/css">
+	*{
+		vertical-align: middle;
+		margin:0;
+		padding:0;
+	}
+	html{
+		font-size: 3rem;
+	}
+	body{
+		width:100%;
+		/*height: 700px;*/
+		display: table;
+	}
+	
+	.wraper{
+		display: table-cell;
+		height: 100%;
+		width: 100%;
+		text-align: center;
+		overflow: hidden;
+	}
+	*:focus{
+		outline: 0;
+	}
+	h1{
+		display: inline-block;
+	}
+	select,
+	button{
+		min-width: 3em;
+		font-size: .5rem;
+		border-radius: .5em;
+	
+	}
+	optgroup{
+		border-radius: .5em;
+	}
+	
+	</style>
+</head>
+<body>
+<div class="wraper">
+	<header><h1 class="animated">animate</h1></header>
+	
+	<select name="chose" id="select">
+		<optgroup label="attention seekers">
+			<option value="flash">flash</option>
+			<option value="pulse">pulse</option>
+			<option value="color">color</option>
+			<option value="bounce">bounce</option>
+			<option value="swing">swing</option>
+			<option value="tada">tada</option>
+			<option value="wobble">wobble</option>
+			<option value="jello">jello</option>
+		</optgroup>
+		<optgroup label="bouncing entrance">
+			<option value="bounceIn">bounceIn</option>
+			<option value="bounceInDown">bounceInDown</option>
+			
+		</optgroup>
+		<optgroup label="bouncing exists">
+			<option value="bounceOut">bounceOut</option>
+			<option value="bounceOutDown">bounceOutDown</option>
+		</optgroup>
+		<optgroup label="fading entrances">
+			<option value="fadeIn">fadeIn</option>
+			<option value="fadeInDown">fadeInDown</option>
+			
+		</optgroup>
+		<optgroup label="fippers">
+			<option value="flip">flip</option>
+			<option value="flipInX">flipInX</option>
+			
+		</optgroup>
+		<optgroup label="lightspeed">
+			<option value="lightSpeedIn">lightSpeedIn</option>
+		</optgroup>
+		<optgroup label="zoom entrances">
+			<option value="zoomIn">zoomIn</option>
+			<option value="zoomInDown">zoomInDown</option>
+		</optgroup>
+		<optgroup label="others">
+			<option value="throwOut">throwOut</option>
+		</optgroup>
+		<optgroup label="special">
+			<option value="hinge">hinge</option>
+		</optgroup>
+	</select>
+	<button type="button">开始</button>
+</div>
+<script type="text/javascript">
+	var height;
+	height=window.innerHeight;
+	console.log(height);
+	var body=document.querySelector('body');
+	var h1=document.querySelector('h1');
+	body.style.height=height+"px";
+	window.onresize=function(){
+		height=window.innerHeight;
+		console.log(height);
+		body.style.height=height+"px";
+	}
+	document.querySelector('button').onclick=show;
+	document.querySelector('select').onchange=show;
+	// $('select').change(show);
+
+	function show(){
+		
+		h1.className="animated "+document.querySelector('select').value;
+		h1.addEventListener("animationend",function(){
+			h1.className="";
+		});
+	}
+	
+</script>
+</body>
+</html>

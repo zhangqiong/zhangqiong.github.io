@@ -1,0 +1,80 @@
+.carousel{
+			position: relative;
+			width: 100%;
+			padding:20% 0;
+			max-height: 600px;
+			overflow: hidden;
+			/*border: 1px solid;*/
+		}
+
+		.carousel-inner{
+			position: absolute;
+			top:0;
+			left:100%;
+			width: 100%;
+			max-height: 600px;
+			/*border: 1px solid;*/
+		}
+		.carousel-inner.active{
+			left: 0;
+		}
+		.carousel-inner a{
+			display: block;
+			width: 100%;
+			max-height: 600px;
+		}
+		.carousel-inner img{
+			width: 100%;
+		}
+		.carousel-caption{
+			position: absolute;
+			left: 45%;
+			top:45%;
+			text-align: center;
+			font-size: 3rem;
+			color: white;
+		}
+		.carousel-point-wrapper{
+			position: absolute;
+			bottom: 20px;
+			width: 100%;
+			text-align: center;
+		}
+		.carousel-lt,
+		.carousel-gt{
+			position: absolute;
+			top:0;
+			color: white;
+			font-weight: 900;
+			font-size: 3rem;	
+			padding:20% 20px;
+			cursor: pointer;
+		}
+		.carousel-lt span,
+		.carousel-gt span{
+			position: relative;
+			top:-20px;
+		}
+		.carousel-lt:hover,
+		.carousel-gt:hover{
+			background-color: rgba(30,30,30,0.1);
+
+		}
+		.carousel-lt{
+			left: 0;
+		}
+		.carousel-gt{
+			right: 0;
+		}
+		.carousel-point{
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			margin-right: 10px;
+			border-radius: 50%;
+			background-color: rgba(130,130,130,0.8);
+			cursor: pointer;
+		}
+		.carousel-point.active{
+			background-color: white;
+		}

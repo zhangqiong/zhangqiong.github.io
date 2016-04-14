@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="windows-Target" content="_top">
+  <title>Document</title>
+</head>
+<body>
+  <link href='https://fonts.googleapis.com/css?family=Architects+Daughter|Reenie+Beanie|Unkempt:700,400|Englebert|Short+Stack&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <div id="wraper">
+
+  <h1 style="font-family: 'Architects Daughter', cursive;">Good morning~~早上好</h1>
+  <h1 style="font-family: 'Reenie Beanie', cursive;">Good morning~~早上好</h1>
+  <h1 style="font-family: 'Unkempt', cursive;">Good morning~~早上好</h1>
+  <h1 style="font-family: 'Englebert', sans-serif;">Good morning~~早上好</h1>
+  <h1 style="font-family: 'Short Stack', cursive;">Good morning~~早上好</h1>
+  </div>
+  <script type="text/javascript">
+  document.getElementById('wraper').onclick=function(){
+    console.log(event.target);
+  }
+  var a={mo:"mo",
+  func:function (){
+    console.log(this.mo);
+  }
+  }
+  a.func();
+  
+  var aaa=function(){
+    // this.s="l";
+    console.log(this.s);
+  }
+aaa.s="aaaaa";
+console.log(aaa.s);
+  new aaa();
+  </script>
+</body>
+</html>
