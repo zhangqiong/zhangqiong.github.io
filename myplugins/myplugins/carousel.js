@@ -3,12 +3,8 @@ var Carousel=function($ele){
 			this.$ele=$ele;
 			this.active_index=0;
 			this.interval=null;
-<<<<<<< .mine
             this.last_click=0;
-||||||| .r40
-=======
 			this.lastTimestamp=null;
->>>>>>> .r61
 			this.carin_count=this.$ele.find('.carousel-inner').length;
 				console.log(this.carin_count);
 				var whi_count=this.carin_count;
@@ -54,14 +50,11 @@ var Carousel=function($ele){
 				this.slide_prev(e,index);
 			}
 		}
-<<<<<<< .mine
 		Carousel.prototype.slide_next=function (index,e){
             console.log(e);
 			console.log(this);
-||||||| .r40
 		Carousel.prototype.slide_next=function (index){
 			console.log(this);
-=======
 		Carousel.prototype.slide_next=function (e,index){
 
 			if(e && !index){
@@ -70,7 +63,6 @@ var Carousel=function($ele){
 				this.lastTimestamp=e.timeStamp;
 			}
 			console.log(index);
->>>>>>> .r61
 			this.$points.eq(this.active_index).removeClass("active");
 			if(index>=0 && index<this.carin_count){
 				console.log("indexyes");
