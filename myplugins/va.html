@@ -12,7 +12,8 @@
 		.container{
 			padding: 20px;
 		}
-		input{
+		input,
+		button{
 
 			border-radius: 15px;
 			margin: 20px;
@@ -43,21 +44,22 @@
 </head>
 <body>
 <div class="container">
-	<form id="f1" class="fo">
+	<form id="f1" class="fo" action="ani.html">
 		<label>not_null:</label><input type="text" not_null="y"><br>
 		<label>最少5:</label><input type="text" min="5"><br>
 		<label>最多5:</label><input type="text" max="5"><br>
 		<label>email:</label><input type="text" email="y"><br>
-
+		<label>与下面的一样:</label><input type="text" same="1" name="account"><br>
+		<label>与上面的一样:</label><input type="text" same="2" name="account"><br>
+		<button type="button" id="submit_btn">提交</button>
 	</form>
 </div>
 	<script src="myplugins/valid.js"></script>
 	<script> 
-
-	
 	var form=$("form").eq(0);
-	// 参数为错误提示
-	form.valid({min:"min",email:"email"});
+	form.valid({min:"min",email:"email"});// 参数为错误提示
+	
+	
 	</script>
 	
 </body>
