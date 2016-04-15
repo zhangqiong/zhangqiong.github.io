@@ -209,6 +209,7 @@
 		}
 		.loading{
 			color: #fff;
+			margin-top: 25%;
 			/*background-color: #999;*/
 			font-size: 28px;
 			line-height: 100%;
@@ -325,8 +326,7 @@
 
 				
 				}
-				controls.addEventListener("mouseover",show_controls);
-				controls.addEventListener("mouseout",hide_controls);
+				
 
 				// 不支持全屏的会放大，如果窗口大小被调整那么大小改变
 				var resize_f=function(){
@@ -487,13 +487,8 @@
 					var time=((e.offsetX||e.layerX)+left)/this.clientWidth*video.duration;
 					hint.innerHTML=changeTime(time);
 				};
-				progress.addEventListener("mousemove",up_hint);
-				progress.onmouseover=function(){
-					hint.style.opacity=1;
-				};
-				progress.onmouseout=function(){
-					hint.style.opacity=0;
-				}
+				
+				
 				
 				// 拖动进度条
 				var up_slide_pos=function(e){
@@ -572,12 +567,22 @@
 				controls.className="js controls";
 
 				// 视频数据加载，开始更新进度条
-				video.addEventListener("loadeddata",function(){
+				video.addEventListener("canplay",function(){
 					init();
 
 					console.log('loaded');
 					loading.style.display='none';
 					this.play();
+					start_pause.innerHTML="暂停";
+					controls.addEventListener("mouseover",show_controls);
+					controls.addEventListener("mouseout",hide_controls);
+					progress.addEventListener("mousemove",up_hint);
+					progress.onmouseover=function(){
+						hint.style.opacity=1;
+					};
+					progress.onmouseout=function(){
+						hint.style.opacity=0;
+					}
 				})
 			}
 			
