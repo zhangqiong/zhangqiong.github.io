@@ -1,0 +1,21 @@
+{
+  "name": "answer-sheet",
+  "version": "1.0.0",
+  "description": "answer sheet",
+  "main": "bootstrap.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-jasmine": "^1.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zq",
+  "license": "ISC"
+}

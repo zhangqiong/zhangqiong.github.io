@@ -1,0 +1,43 @@
+
+.ke-container{
+	margin: auto!important;
+	overflow: visible;
+}
+.ke-container:hover{
+}
+.ke-edit-iframe{
+	font-size: 3mm;
+
+}
+.ke-icon-underline{
+	background-image: none!important;
+}
+.ke-icon-underline:before{
+	content:'__';
+	font-size: 12px;
+    line-height: 12px;
+}
+.ke-toolbar{
+	/*opacity: 0;*/
+	border: none;
+	background-color: transparent;
+	height: 0;
+	overflow: visible;
+	position: relative;
+	top: -50px;
+	padding: 0;
+	float: left;
+}
+.ke-toolbar:hover{
+	opacity: 1;
+
+}
+.ke-statusbar{
+	height: 0;
+	overflow: visible;
+	border: none;
+}
+.ke-toolbar span{
+	background-color: #fff;
+
+}

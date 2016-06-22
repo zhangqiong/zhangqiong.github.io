@@ -1,0 +1,96 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #eee;
+}
+.ctrl-panel{
+	width: auto;
+	position: fixed;
+}
+.ctrl-panel button{
+	display: block;
+	margin: 10px;
+}
+.modal-dialog{
+	width:30%;
+	min-width: 300px;
+	margin:auto;
+}
+.modal-dialog label{
+	width: 100px;
+}
+.sheet{
+	box-sizing: border-box;
+	position: relative;
+	width : 210mm;
+	margin: 10px auto;
+	/*border : 1mm #ddd solid;*/
+	font-size : 3mm;
+}
+.page{
+	box-sizing: border-box;
+	position: relative;
+	width : 210mm;
+	height: 297mm;
+	margin: 10px 0;
+	/*border : 1mm #ddd solid;*/
+	background-color: #fff;
+	font-size : 3mm;
+	padding: 15mm;
+}
+/*.page-mark{
+	box-sizing: border-box;
+	border-bottom: 1px solid;
+	height: 4mm;
+	width: 100%;
+	padding-right: 7mm;
+	text-align: right;
+	position: absolute;
+	left: 0;
+}*/
+.ctrls{
+	opacity: 0;
+	transition: opacity .2s;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.ctrls:hover{
+	opacity: 1;
+}
+.choices,
+.subjective{
+	position: relative;
+	margin-bottom: 3mm;
+	border: 1px solid #000;
+	padding: 3mm;
+}
+.choices .small{
+	display: inline-block;
+	/*border: solid 1px;*/
+	width: 35mm;
+}
+.no_2{
+	display: inline-block;
+	width: 2em;
+	text-align: right;
+}
+.subjective .small{
+	position: relative;
+}
+.subjective .small:not(:last-child){
+	margin-bottom: 3mm;
+}
+.subjective .small.border{
+	border: 1px solid;
+}
+.editor-show{
+	overflow: hidden;
+	padding: 5px;
+}
+.ke-content{
+	font-size: 3mm;
+
+}
